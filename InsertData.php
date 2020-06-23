@@ -16,7 +16,7 @@ list-style: none;
     <form name="InsertData" action="InsertData.php" method="POST">
 <li>productid:</li><li><input type="text" name="productid" /></li>
 <li>productname:</li><li><input type="text" name="productname" /></li>
-<li>size:</li><li><input type="text" name="sizes"/></li>
+<li>size:</li><li><input type="text" name="size"/></li>
 <li>basicprice:</li><li><input type="text" name="basicprice"/></li>
 <li>residual:</li><li><input type="text" name="residual"/></li>
 <li><input type="submit"/></li>
