@@ -13,12 +13,13 @@ list-style: none;
 <h1>INSERT DATA TO DATABASE</h1>
 <h2>Enter data into student table</h2>
 <ul>
-    <form name="InsertData" action="InsertData.php" method="POST" >
-<li>Student ID:</li><li><input type="text" name="StudentID" /></li>
-<li>Full Name:</li><li><input type="text" name="fname" /></li>
-<li>Email:</li><li><input type="text" name="email" /></li>
-<li>Class:</li><li><input type="text" name="classname" /></li>
-<li><input type="submit" /></li>
+    <form name="InsertData" action="InsertData.php" method="POST">
+<li>productid:</li><li><input type="text" name="productid" /></li>
+<li>productname:</li><li><input type="text" name="productname" /></li>
+<li>size:</li><li><input type="text" name="sizes"/></li>
+<li>basicprice:</li><li><input type="text" name="basicprice"/></li>
+<li>residual:</li><li><input type="text" name="residual"/></li>
+<li><input type="submit"/></li>
 </form>
 </ul>
 
@@ -32,8 +33,8 @@ if (empty(getenv("DATABASE_URL"))){
    $db = parse_url(getenv("DATABASE_URL"));
    $pdo = new PDO("pgsql:" . sprintf(
          "host=
-ec2-52-202-146-43.compute-1.amazonaws.com
-;port=5432;user=lnmlwwbswnzsfa;password=cb977e5e295f4561e6e00a6bfe3cb3f1239bd0a6f672d8cde0d2527d0f465bbd;dbname=d5jt6vji9s8ql3",
+ec2-52-200-48-116.compute-1.amazonaws.com
+;port=5432;user=hzxvtahusyfeii;password=0ec932d437daae6077be3cfbf510fc7b03c0de67d7fa93bbcf8f560d65ea9c51;dbname=dasohfkqs080jg",
         $db["host"],
         $db["port"],
         $db["user"],
@@ -59,8 +60,8 @@ $sql = "INSERT INTO product(productid, productname,size, basicprice,residual)"
         . " VALUES('$_POST[productid]','$_POST[productname]','$_POST[size]','$_POST[basicprice]','$_POST[residual]')";
 $stmt = $pdo->prepare($sql);
 //$stmt->execute();
- if (is_null($_POST[ProductID])) {
-   echo "ProductID must be not null";
+ if (is_null($_POST[Productid])) {
+   echo "Productid must be not null";
  }
  else
  {
