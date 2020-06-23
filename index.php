@@ -77,9 +77,11 @@
         	</div>
         	<div class="footer-link"> 
         		<ul>
-        			<li><a href="https://www.facebook.com/">Facebook</a></li>
-        			<li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Gmail</a></li>
-        			<li><a href="https://www.instagram.com/">Instagram</a></li>
+        			<li> <a href="Updatedata.php"><li>Update<i class="fa fa-angle-right"></i></li></a>
+                                <li> <a href="Insertdata.php"><li>Insert<i class="fa fa-angle-right"></i></li></a>  
+                                <li> <a href="Deletedata.php"><li>Delete<i class="fa fa-angle-right"></i></li></a
+                                <li> <a href="ConnectToDB.php"><li>View<i class="fa fa-angle-right"></i></li></a>
+                                    
         		</ul>
         	</div>
         	<div class="footer-about"> 
